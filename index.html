@@ -1,217 +1,132 @@
 <html>
 <head>
-    <title>
-    blog menu</title>
-    <style>
-    
-        #picture1:hover{
-            transform: rotate(50deg)
-            height: 500px;
-            width: 1500px;
-            overflow: hidden;
-            transform: rotate(50deg)
-        
-        } 
+ <style type="text/css">
+     .storke{
+            text-decoration: line-through;
+        }
+        #butt{
+           background-color: orangered;
+            border-bottom-color: blue;
+            width: 325px;
+            border-radius: 50px;
+        }
         h1{
-            font-size: 70px;
-            color: greenyellow
-        
-        
+           font-size: 70px;
+            color: blue;
         }
-       
-        .container {
-            display: flex;
-            background-color: pink;
+        #ror{
+            width: 70px;
+            height: 50px;
         }
-        .leftSide {
-            background-color: aqua;
-            flex: 1;
-            border-right: 1px solid gray;
-            padding-right: 10px;
-            text-align: center;
+        #stoplist{
+            border-bottom: 1px dashed grey;
         }
-        .rightSide {
-        background-color:bisque;
-            flex: 6;
+        #textButton{
+        position: absolute;
+            left: 70px;
+            top: 300px;
         }
-        .flexChild {
-            flex: 1;
+      @keyframes Images1 {
+                0%{
+                       left:0%;
+                   }
+                   50%{
+                       left:calc(50% - 300px);
+                   }  
+                  100%{
+                       left:0%;
+           }
         }
-        .flowerImage {
-            border-radius: 50%;
-            width: 200px;
-            height: auto;
+     @keyframes Images2 {
+                0%{
+                       left:calc(100% - 300px);
+                   }
+                   50%{
+                       left:50%;
+                   }  
+                  100%{
+                       left:calc(100% - 300px);
+           }
+           }
+            .picture{
+                height: 300px;
+               width:300px;
+               border:4px solid blue;
+               top: 0%;
+               left: 0%;
+              animation: Images1 8s infinite;
+               position: absolute;
+                }
+     p{
+            font-size: 30px;
         }
-        .container {
-            display: flex;
-            background-color: pink;
+                .picture1{
+                height: 300px;
+               width:300px;
+               border:4px solid blue;
+               top: 0%;
+               left: 0%;
+              animation: Images2 8s infinite;
+               position: absolute;
+                    }
+        #divImages {
+            background-color: blue;
+            position: relative;
+            width: 100%;
+            height: 300px;
         }
-        .leftSide {
-            background-color: aqua;
-            flex: 1;
+        #img3{
+            width: 500px;
+            height: 300px;
+            border-radius: 70px;
+        }
+        #p5{
+            width: 500px;
+            height: 300px;
+        }
+    body{
+            background-color: burlywood;
+        }
+        .p3{
             
-            border-right: 1px solid gray;
-            padding-right: 10px;
-            text-align: center;
+            background-color: blue;
         }
-        .rightSide {
-        background-color:bisque;
-            flex: 6;
+        .p5{
+          background-color: blue;  
         }
-        .flexChild {
-            flex: 1;
+        #para{
+      color: green;
+            font-size: 30px;
         }
-        .flowerImage {
-            border-radius: 50%;
-            width: 200px;
-            height: auto;
-        
-           .container {
-            display: flex;
-            background-color: pink;
-        }
-        .leftSide {
-            background-color: aqua;
-            flex: 1;
-            border-right: 1px solid gray;
-            padding-right: 10px;
-            text-align: center;
-        }
-        .rightSide {
-        background-color:bisque;
-            flex: 6;
-        }
-        .flexChild {
-            flex: 1;
-        }
-        .flowerImage {
-            border-radius: 50%;
-            width: 200px;
-            height: auto;
-            }
-    
-    
-    </style>
-<title>blog menu</title>
+        }           
+</style>
 
 </head>
-<body>
-    <h1> pro flowers </h1>
-    <img id="picture1" src="http://www.proflowers.com/blog/wp-content/uploads/2016/01/1-00_Types-of-Flowers_MainHero.png">
-    <p> Did you know there are over 400,000 plant species across the world? In other words, that’s more than the number of bird, butterfly and bee species, combined! While many flowers grow naturally in forests, grasslands, deserts and tundras, growing your own garden or picking up a bouquet is a great way to create your own oasis.
-
-How do you pick the right type of flowers for your needs? With literally hundreds of thousands to choose from, it can be overwhelming! That’s why we’ve compiled our handy guide below of 151 Most Common Flower Types in the U.S. Wondering how much sun or soil your flower will need? Where it grows best? How to make a fabulous bouquet for your indoor table? Scroll through our alphabetical list of flower names and gardening 
-        information to find your perfect bloom!</p>
-    
-    
-    <div class="container">
-        <div class="leftSide">
-            <img class="flowerImage" src="http://www.proflowers.com/blog/wp-content/plugins/pf-flowertypes/image/flower-197343.jpg"/>
-            <h5>Aconite</h5>
+ <body>
+        <h1> be relax and close your eyes and dream with us</h1>
+        <div id="butt"><img src="http://www.clker.com/cliparts/0/P/X/P/D/E/cloudmd.png"><span id="textButton">u can dream</span></div>
+        <p id="para">be strong and dream with us</p>
+        <div id="divImages">
+            <img  class="picture"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2J3Fb_R6wymwbF5IWUjkc53kytbSpQOc5V5sTYRTEVVGNj3ehhg">
+            <img  class="picture1"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2J3Fb_R6wymwbF5IWUjkc53kytbSpQOc5V5sTYRTEVVGNj3ehhg">
         </div>
-        <div class="rightSide">
-            <p>How do you pick the right type of flowers for your needs? With literally hundreds of thousands to choose from, it can be overwhelming! That’s why we’ve compiled our handy guide below of 151 Most Common Flower Typ</p>
-            <div class="container">
-                <div class="flexChild">
-                    <h5 class="needs">Sun Needs</h5>
-                    <p>Full Sun/Partial Shade</p>
-                </div>
-                <div class="flexChild">
-                    <h5 class="needs">Sun Needs</h5>
-                    <p>Full Sun/Partial Shade</p>
-                </div>
-                <div class="flexChild">
-                    <h5 class="needs">Sun Needs</h5>
-                    <p>Full Sun/Partial Shade</p>
-                </div>
-                <div class="flexChild">
-                    <h5 class="needs">Sun Needs</h5>
-                    <p>Full Sun/Partial Shade</p>
-                </div>
-                <div class="flexChild">
-                    <h5 class="needs">Sun Needs</h5>
-                    <p>Full Sun/Partial Shade</p>
-                </div>
-                <div class="flexChild">
-                    <h5 class="needs">Sun Needs</h5>
-                    <p>Full Sun/Partial Shade</p>
-                </div>
-            </div>
-        </div>
-    
-    </div>
-     <div class="container">
-        <div class="leftSide">
-            <img class="flowerImage" src="http://www.proflowers.com/blog/wp-content/plugins/pf-flowertypes/image/flowers-195967.jpg"/>
-            <h5>Aconite</h5>
-        </div>
-        <div class="rightSide">
-            <p>There are five varieties of the Allium, known primarily for their tall stems and large, spherical heads. Blooms are typically violet, but blue and pink varieties can also be found.</p>
-            <div class="container">
-                <div class="flexChild">
-                    <h5 class="needs">Sun Needs</h5>
-                    <p>Full Sun/Partial Shade</p>
-                </div>
-                <div class="flexChild">
-                    <h5 class="needs">Sun Needs</h5>
-                    <p>Full Sun/Partial Shade</p>
-                </div>
-                <div class="flexChild">
-                    <h5 class="needs">Sun Needs</h5>
-                    <p>Full Sun/Partial Shade</p>
-                </div>
-                <div class="flexChild">
-                    <h5 class="needs">Sun Needs</h5>
-                    <p>Full Sun/Partial Shade</p>
-                </div>
-                <div class="flexChild">
-                    <h5 class="needs">Sun Needs</h5>
-                    <p>Full Sun/Partial Shade</p>
-                </div>
-                <div class="flexChild">
-                    <h5 class="needs">Sun Needs</h5>
-                    <p>Full Sun/Partial Shade</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-<div class="container">
-        <div class="leftSide">
-            <img class="flowerImage" src="https://qph.ec.quoracdn.net/main-qimg-a9be0d2a5e6d05c6eb8c26003aee5a45-c"/>
-            <h5>Aconite</h5>
-        </div>
-        <div class="rightSide">
-            <p>Also known as Flossflower, Ageratums come in blue, pink and white blooms. The taller varieties are best for cutting and displaying in your home, while the dwarf bedding varieties are best kept in the garden.</p>
-            <div class="container">
-                <div class="flexChild">
-                    <h5 class="needs">Sun Needs</h5>
-                    <p>Full Sun/Partial Shade</p>
-                </div>
-                <div class="flexChild">
-                    <h5 class="needs">Sun Needs</h5>
-                    <p>Full Sun/Partial Shade</p>
-                </div>
-                <div class="flexChild">
-                    <h5 class="needs">Sun Needs</h5>
-                    <p>Full Sun/Partial Shade</p>
-                </div>
-                <div class="flexChild">
-                    <h5 class="needs">Sun Needs</h5>
-                    <p>Full Sun/Partial Shade</p>
-                </div>
-                <div class="flexChild">
-                    <h5 class="needs">Sun Needs</h5>
-                    <p>Full Sun/Partial Shade</p>
-                </div>
-                <div class="flexChild">
-                    <h5 class="needs">Sun Needs</h5>
-                    <p>Full Sun/Partial Shade</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-<a> http://www.proflowers.com/blog/types-of-flowers</a>
-</body>
+        
+        <p>Dreams are just like flowers,we can't imagine our life without and as such we have to take care of just as we do with flowers to grow up as we want. Every one in this life has his own dreams and lam that one who has alot of dreams and l would like all my dreams to come true one day. One of my dreams is to take a trip around the world, so that l would be able to get knowledge and insight about that an unknown world for me. I know that is impossible to happen but l belive in God's power that can be able to turn the impossible to sth possible. For that l keep on praying him to make it true.I dream of a world made up of good people which includes their choices, their passions, their likes & all the good things that they desire. In fact we cannot live in such a world which exists in my dream but I think in dreams we can make anything happen.My dream is big, wide and far away from this real world. My dream world has no place for violence and hatred. We all are seeing a lot of bad things in the televisions and newspapers that is happening in various parts of this world today.The reality of this world where I am living right now makes me afraid to live here because I can see negativity and sins all around me. I dream of a world which has no greed, hatred and violence but it is full of love, peace & harmony.</p>
+    <img id="p5"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLNsd09WYBiQy3rJ_tE7OkStwmeBTY-g-uFqHZPudDz5Bcl_rYWw">
+     <p class="p5">its not your time for sun sit</p>
+     <img  id="img3"src="https://i.ytimg.com/vi/p8HNd8F8z0A/maxresdefault.jpg">
+     <p class="p3"> its your time to shine you deserve that</p>
+ <script type="text/javascript">
+        var textToClick = document.getElementById("textButton");
+        function clickFunction(){
+              function ourReaction() {
+        document.getElementById('textButton').innerText='follow us'
+        document.getElementById('para').innerText='good luck'
+    }
+   document.getElementById('butt').onclick=ourReaction
+    document.getElementById('para').onclick=ourReaction 
+        }
+        textToClick.onclick = clickFunction
+    </script>  
+    </body>
 </html>
