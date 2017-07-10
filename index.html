@@ -1,132 +1,196 @@
 <html>
+
+
+
 <head>
- <style type="text/css">
-     .storke{
-            text-decoration: line-through;
-        }
-        #butt{
-           background-color: orangered;
-            border-bottom-color: blue;
-            width: 325px;
-            border-radius: 50px;
-        }
-        h1{
+
+<style type="text/css">
+
+  /* WebKit and Opera browsers */
+  @-webkit-keyframes spinner {
+    from { -webkit-transform: rotateY(0deg);    }
+    to   { -webkit-transform: rotateY(-360deg); }
+  }
+
+  /* all other browsers */
+  @keyframes spinner {
+    from {
+      -moz-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+    to {
+      -moz-transform: rotateY(-360deg);
+      -ms-transform: rotateY(-360deg);
+      transform: rotateY(-360deg);
+    }
+  }
+
+</style><style type="text/css">
+
+  #stage {
+    margin: 1em auto;
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    -ms-perspective: 1200px;
+    perspective: 1200px;
+  }
+
+</style>
+    
+    
+
+
+<style type="text/css">
+
+  #spinner {
+    -webkit-animation-name: spinner;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  #spinner:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+
+</style><style type="text/css">
+
+  #spinner img {
+    position: absolute;
+    border: 1px solid #ccc;
+    background: rgba(255,255,255,0.8);
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+  }
+
+</style><style type="text/css">
+
+  @-webkit-keyframes spinner5 {
+    from,15% { -webkit-transform: rotateY(0deg);    }
+    20%,35%  { -webkit-transform: rotateY(-72deg);  }
+    40%,55%  { -webkit-transform: rotateY(-144deg); }
+    60%,75%  { -webkit-transform: rotateY(-216deg); }
+    80%,95%  { -webkit-transform: rotateY(-288deg); }
+    to       { -webkit-transform: rotateY(-360deg); }
+  }
+
+  @keyframes spinner5 {
+    from,15% {
+      -moz-transform: rotateY(0);
+      -ms-transform: rotateY(0);
+      transform: rotateY(0);
+    }
+    20%,35%  {
+      -moz-transform: rotateY(-72deg);
+      -ms-transform: rotateY(-72deg);
+      transform: rotateY(-72deg);
+    }
+    40%,55%  {
+      -moz-transform: rotateY(-144deg);
+      -ms-transform: rotateY(-144deg);
+      transform: rotateY(-144deg);
+    }
+    60%,75%  {
+      -moz-transform: rotateY(-216deg);
+      -ms-transform: rotateY(-216deg);
+      transform: rotateY(-216deg);
+    }
+    80%,95%  {
+      -moz-transform: rotateY(-288deg);
+      -ms-transform: rotateY(-288deg);
+      transform: rotateY(-288deg);
+    }
+    to {
+      -moz-transform: rotateY(-360deg);
+      -ms-transform: rotateY(-360deg);
+      transform: rotateY(-360deg);
+    }
+  }
+    </style>
+    
+    
+    <style type="text/css">
+
+  #spinner {
+    -webkit-animation-name: spinner5;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 20s;
+
+    animation-name: spinner5;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+</style>
+    <style>    h1{
+            
            font-size: 70px;
             color: blue;
+        background-color: lightskyblue;
         }
-        #ror{
-            width: 70px;
-            height: 50px;
+    </style>
+    
+    <style>    p{
+        font-size: px;
+        color: green;
         }
-        #stoplist{
-            border-bottom: 1px dashed grey;
-        }
-        #textButton{
-        position: absolute;
-            left: 70px;
-            top: 300px;
-        }
-      @keyframes Images1 {
-                0%{
-                       left:0%;
-                   }
-                   50%{
-                       left:calc(50% - 300px);
-                   }  
-                  100%{
-                       left:0%;
-           }
-        }
-     @keyframes Images2 {
-                0%{
-                       left:calc(100% - 300px);
-                   }
-                   50%{
-                       left:50%;
-                   }  
-                  100%{
-                       left:calc(100% - 300px);
-           }
-           }
-            .picture{
-                height: 300px;
-               width:300px;
-               border:4px solid blue;
-               top: 0%;
-               left: 0%;
-              animation: Images1 8s infinite;
-               position: absolute;
-                }
-     p{
-            font-size: 30px;
-        }
-                .picture1{
-                height: 300px;
-               width:300px;
-               border:4px solid blue;
-               top: 0%;
-               left: 0%;
-              animation: Images2 8s infinite;
-               position: absolute;
-                    }
-        #divImages {
-            background-color: blue;
-            position: relative;
-            width: 100%;
-            height: 300px;
-        }
-        #img3{
-            width: 500px;
-            height: 300px;
-            border-radius: 70px;
-        }
-        #p5{
-            width: 500px;
-            height: 300px;
-        }
-    body{
-            background-color: burlywood;
-        }
-        .p3{
-            
-            background-color: blue;
-        }
-        .p5{
-          background-color: blue;  
-        }
-        #para{
-      color: green;
-            font-size: 30px;
-        }
-        }           
-</style>
 
+      </style>
+    
 </head>
- <body>
-        <h1> be relax and close your eyes and dream with us</h1>
-        <div id="butt"><img src="http://www.clker.com/cliparts/0/P/X/P/D/E/cloudmd.png"><span id="textButton">u can dream</span></div>
-        <p id="para">be strong and dream with us</p>
-        <div id="divImages">
-            <img  class="picture"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2J3Fb_R6wymwbF5IWUjkc53kytbSpQOc5V5sTYRTEVVGNj3ehhg">
-            <img  class="picture1"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2J3Fb_R6wymwbF5IWUjkc53kytbSpQOc5V5sTYRTEVVGNj3ehhg">
-        </div>
-        
-        <p>Dreams are just like flowers,we can't imagine our life without and as such we have to take care of just as we do with flowers to grow up as we want. Every one in this life has his own dreams and lam that one who has alot of dreams and l would like all my dreams to come true one day. One of my dreams is to take a trip around the world, so that l would be able to get knowledge and insight about that an unknown world for me. I know that is impossible to happen but l belive in God's power that can be able to turn the impossible to sth possible. For that l keep on praying him to make it true.I dream of a world made up of good people which includes their choices, their passions, their likes & all the good things that they desire. In fact we cannot live in such a world which exists in my dream but I think in dreams we can make anything happen.My dream is big, wide and far away from this real world. My dream world has no place for violence and hatred. We all are seeing a lot of bad things in the televisions and newspapers that is happening in various parts of this world today.The reality of this world where I am living right now makes me afraid to live here because I can see negativity and sins all around me. I dream of a world which has no greed, hatred and violence but it is full of love, peace & harmony.</p>
-    <img id="p5"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLNsd09WYBiQy3rJ_tE7OkStwmeBTY-g-uFqHZPudDz5Bcl_rYWw">
-     <p class="p5">its not your time for sun sit</p>
-     <img  id="img3"src="https://i.ytimg.com/vi/p8HNd8F8z0A/maxresdefault.jpg">
-     <p class="p3"> its your time to shine you deserve that</p>
- <script type="text/javascript">
-        var textToClick = document.getElementById("textButton");
-        function clickFunction(){
-              function ourReaction() {
-        document.getElementById('textButton').innerText='follow us'
-        document.getElementById('para').innerText='good luck'
-    }
-   document.getElementById('butt').onclick=ourReaction
-    document.getElementById('para').onclick=ourReaction 
-        }
-        textToClick.onclick = clickFunction
-    </script>  
-    </body>
+
+
+<body> 
+    <div id="stage" style="background: rgba(0,0,0,0.5);">
+<p id="spinner" style="background: rgba(0,0,0,0.5); text-align: center; color: #fff;">CONSIDER NATURE</p>
+</div><div id="stage" style="padding-left: 180px; height: 160px;">
+<div id="spinner" style="-webkit-transform-origin: 180px 0 0;">
+<img style="-webkit-transform: rotateY(0deg) translateX(180px); padding: 0 0 0 160px;" src="http://images.all-free-download.com/images/graphiclarge/natural_beauty_highdefinition_picture_166133.jpg" width="200" height="160" alt=" ">
+<img style="-webkit-transform: rotateY(-72deg) translateX(180px); padding: 0 0 0 147px;" src="http://thewallpaper.co/wp-content/uploads/2016/01/hd-nature-wallpapers-landscape-natural-images-cute-desktop-images-field-nature-background-images-windows-10-mac-wallpaper-1600x1200.jpg" width="213" height="160" alt="">
+<img style="-webkit-transform: rotateY(-144deg) translateX(180px); padding: 0 0 0 120px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKmSqyheMEU0WmWsxR5P8ixkm1sIN-ikNbFZDny10PuxGP04ac9g" width="240" height="160" alt="">
+<img style="-webkit-transform: rotateY(-216deg) translateX(180px); padding: 0 0 0 147px;" src="http://entertainmentmesh.com/wp-content/uploads/2015/04/Natural-HD-Wallpapers.jpg" width="213" height="160" alt="">
+<img style="-webkit-transform: rotateY(-288deg) translateX(180px); padding: 0 0 0 122px;" src="http://static.bestfreewebresources.com/wp-content/uploads/2012/02/natural-HD-Wallpaper-2.jpg" width="238" height="160" alt="">
+</div>
+</div>
+    <h1> The Beauty Of Nature </h1>
+    
+    
+    
+    
+    
+    <p>I sometimes stare at the sky and wonder why we have made such a mess of things.  I wonder how we can tear up the seas and use up the trees all in the name of progress.  It is such a tragedy that we are damaging things so fast and they will soon be way beyond repair.
+It is very sad to think future generations will not have the natural things to enjoy as we have had, and that they will be paupers when it comes to the offerings of the natural world.
+
+But, preserving nature is one thing ... appreciating it is quite another.  There is so very much beauty all around us to see, touch, and hear.  Nature is so miraculous because it is always changing.  No matter how many times you look at something, it is always different.
+
+Nature can set a sky aflame at sunset or magically transform a familiar landscape into a snow-white wonderland.  It can paint a rainbow in the sky, paint beautiful autumn colors on trees, or paint a clump of daffodils in the grass with glow of soft sunlight.Nature can bring a lot of beauty into our lives.  Nature has a way of affecting our moods and it can force us to change our plans.  Nature is responsible for the sun, clouds, rain, and snow.  When it is sunny and bright outside, we feel cheerful inside.  When it is cloudy and rainy, we often feel gloomy.  When there is a beautiful and starry night, the moonlight makes us feel romantic.
+
+When we see the leaves budding on a tree or when a timid flower pushes through the frozen ground, or when we smell the freshness of spring, new hope will always come to us.  Nature is truly an intrinsic part of our lives.
+
+When we wake and see a sunrise, when we walk and feel a breeze, when we gaze at the mountains and the splendor of the seas, when we see the earth renew its beauty at each season of the year, and when the stars shine at night, we should be so very thankful to the Lord for giving us all these wonderful and miraculous things.  Learning to become more aware of nature can truly have a good effect on our lives in the way we look at things and in the way we feel about ourselves.
+
+
+     </p>
+    
+    <CENTER><FONT SIZE="4" FACE="Comic Sans MS">Thank you for visiting </FONT><BR><FONT COLOR="#097B03" SIZE="4" FACE="Comic Sans MS"> "The Beauty Of Nature!" </FONT></CENTER><P>
+    
+     </body>
 </html>
