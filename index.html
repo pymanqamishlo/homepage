@@ -1,143 +1,123 @@
-<<HTML>
-<HEAD>
- 
-<style type="text/css"> 
-body {
-scrollbar-arrow-color: #1DBB1D;
-scrollbar-base-color: #053704;
-scrollbar-dark-shadow-color: #053704;
-scrollbar-track-color: #053704;
+<html>
+    
+    <head>
+        
+        
+        <style>
+            
+   #sun {
+    background-color : #ba8f27;
+    border-radius : 200px;
+    box-shadow : 0 0 128px red;
+    margin-top : -100px; 
+    margin-left : -100px;
+    left : 50%;
+    height : 200px;
+    position : absolute;
+    top : 50%;
+    width : 200px;
 }
-</style>
- 
-<TITLE>Penny's Place In Cyberspace ~ Take Time To See ~</TITLE>
-<META NAME="author" CONTENT="Penny Parker">
-<META NAME="generator" CONTENT="HTMLpad">
-<META NAME="classification" CONTENT="Personal Home Page">
-<META NAME="description" CONTENT="A beautiful poem about Nature."> 
-<META NAME="keywords" CONTENT="nature,earth,deer,mountain,bird,God,poem,inspiration">
- 
-<BGSOUND SRC="asthedeer.mid" HIDDEN="true" LOOP="infinite" AUTOSTART="true">
- 
-</HEAD>									
- 
-<BODY BACKGROUND="tosee1.jpg" BGCOLOR="#3D7529" TEXT="#A7E093" LINK="#D0AB86"  ALINK="#D0AB86" VLINK="#D0AB86">
- 
-<CENTER><TABLE BORDER="2" CELLSPACING="0" CELLPADDING="20" WIDTH="92%" BACKGROUND="toseebk3.jpg" BORDERCOLOR="#3C8622" BORDERCOLORDARK="#245214">
 
-<TR><TD> 
-<CENTER><TABLE BORDER="2" CELLSPACING="0" CELLPADDING="15" WIDTH="100%" BACKGROUND="toseebk3.jpg" BORDERCOLOR="#3C8622" BORDERCOLORDARK="#245214">
- 
-<TR><TD>
-<CENTER><TABLE BORDER="1" CELLSPACING="0" CELLPADDING="4" WIDTH="100%" BACKGROUND="toseebk5.jpg" BORDERCOLOR="#3C8622" BORDERCOLORDARK="#245214">
- 
-<TR><TD>
-<CENTER><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%" BACKGROUND="tosee2.jpg">
-<TR><TD WIDTH="100%"><P><BR><BR>
- 
-<CENTER><IMG SRC="tosee3.gif" WIDTH="317" HEIGHT="41" ALT="Take Time To See"></CENTER><P><BR>
- 
-<CENTER><FONT SIZE="2" FACE="Comic Sans MS">If you don't have Java Applet capabilities ...<BR>Please "<A HREF="tosee2.html">Click Here</A>."</FONT></CENTER><P>
- 
-<CENTER><APPLET CODE="Lake" HEIGHT="575" WIDTH="435">
-<PARAM NAME="image"  VALUE="tosee4.jpg">
-</APPLET></CENTER><P><BR><BR>
- 
-<CENTER><TABLE BORDER="1" CELLSPACING="20" CELLPADDING="0" WIDTH="75%" BACKGROUND="tosee2.jpg" BORDERCOLOR="#3C8622" BORDERCOLORDARK="#245214">
-<TR><TD WIDTH="100%"><P><BR>
- 
-<CENTER><FONT SIZE="3" FACE="Comic Sans MS">
-It seems so hard to understand,<BR>
-As I look across the land,<BR>
-That all I view belongs to me,<BR>
-I ought to take more time to see.<P><BR>
- 
-The distant hills and mountains high,<BR>
-The rolling clouds and bright blue sky,<BR>
-No one can take these views from me,<BR>
-As long as I have eyes to see.<P><BR>
- 
-<CENTER><IMG SRC="tosee5.jpg" WIDTH="138" HEIGHT="80" ALT=Deer></CENTER><P><BR>
- 
-A timid deer with a haunting look,<BR>
-Who stands refreshed by yonder brook,<BR>
-Knows not that he belongs to me,<BR>
-Oh, what a thrilling sight to see!<P><BR>
- 
-The song of birds so gay and clear,<BR>
-That fill the morning air with cheer,<BR>
-And fragrant flowers of every hue,<BR>
-That stand erect bedecked with dew;<BR>
-All these and more belong to me,<BR>
-If I but use my eyes to see.<P><BR>
- 
-<CENTER><IMG SRC="tosee5.jpg" WIDTH="138" HEIGHT="80" ALT=Deer></CENTER><P><BR>
- 
-When evening shadows gather night,<BR>
-And twinkling stars light up the sky,<BR>
-I hear my Master say to me,<BR>
-"I made it all for you to see!"<BR>
-My heart grows warm with faith and pride,<BR>
-To know that He is by my side.</FONT></CENTER><P>
-												
-<CENTER><FONT SIZE="2" FACE="Comic Sans MS">~ Author Unknown ~</FONT> </CENTER><P><BR>
- 
-</TD></TR></TABLE></CENTER><P><BR><BR> 
- 
- 
-<!-- Begin E-Mail-This-Page Script //-->
-<CENTER><form name="eMailer">
-<FONT SIZE="2" FACE="Verdana">E-MAIL THIS PAGE
-<br>
-Enter Recipient's Email:</FONT>
-<br>
-<input type="text" name="address" size="25">
-<br>
-<input type="button" value="Send this URL" onClick="mailThisUrl();">
-</form>
- 
-<script language="JavaScript1.2"> 
-// (C) 2000 www.CodeLifter.com
-// http://www.codelifter.com
-// Free for all users, but leave in this header
- 
-var good;
-function checkEmailAddress(field) {
-// the following expression must be all on one line...
-var goodEmail = field.value.match(/\b(^(\S+@).+((\.com)|(\.net)|(\.edu)|(\.mil)|(\.gov)|(\.org)|(\..{2,2}))$)\b/gi);
-if (goodEmail){
-   good = true
-} else {
-   alert('Please enter a valid e-mail address.')
-   field.focus()
-   field.select()
-   good = false
-   }
+#earth-orbit {
+    border: 2px solid #373737;
+    border-radius: 50%;
+    left: 50%;
+    height: 500px;
+    margin-top: -250px;
+    margin-left: -250px;
+    position: absolute;
+    top: 50%;
+    width: 500px;
+
+    -webkit-animation: spin-right 10s linear infinite;
+    -moz-animation: spin-right 10s linear infinite;
+    -ms-animation: spin-right 10s linear infinite;
+    -o-animation: spin-right 10s linear infinite;
+    animation: spin-right 10s linear infinite;
 }
- 
-u = window.location;
-m = "Something you might enjoy ...";
-function mailThisUrl(){
-   good = false
-   checkEmailAddress(document.eMailer.address)
-   if (good){
-      // the following expression must be all on one line...
-      window.location = "mailto:"+document.eMailer.address.value+"?subject="+m+"&body="+document.title+" "+u;
-   }
+ #moon-orbit {
+    border-radius: 50%;
+    left: 50%;
+    height: 500px;
+    margin-top: -250px;
+    margin-left: -250px;
+    position: absolute;
+    top: 50%;
+    width: 500px;
+
+    transform: rotate(360deg);
+    transform-origin: 50% 100%;
 }
-</script>
-<!-- End E-Mail-This-Page Script //--></CENTER><P><BR><BR>
 
-<CENTER><A HREF="http://www.graphicsbypennyparker.com"><IMG SRC="tosee6.gif" BORDER="0" WIDTH="127" HEIGHT="45" ALT=Logo></A></CENTER><P>
+#earth {
+    background-color : #2d7ddc;
+    border-radius : 50px;
+    margin-left : -25px;
+    margin-top : -25px;
+    height : 50px;
+    left : 50%;
+    position : absolute;
+    top : 0%;
+    width : 50px;
+}
+     #moon {
+    background-color : #b2b2b2;
+    border-radius : 50px;
+    margin-left : -25px;
+    margin-top : -25px;
+    height : 16px;
+    left : 43%;
+    position : absolute;
+    top : 0%;
+    width : 16px;
+}
 
-<CENTER><FONT COLOR="#402204" SIZE="1" FACE="Comic Sans MS">Please&nbsp;<A HREF="notice.html">click here</A>&nbsp;for permission to use graphics.</FONT></CENTER> <P><BR><BR>   
- 
-<CENTER><FONT SIZE="3" FACE="Verdana"><A HREF="mtnnights.html">Next</A>&nbsp;&nbsp;&nbsp;<A HREF="nature.html">Nature Page</A>&nbsp;&nbsp;&nbsp;<A HREF="index.html">Home</A></FONT></CENTER><P>
-  
-</TD></TR></TABLE></CENTER>
-</TD></TR></TABLE></CENTER>
-</TD></TR></TABLE></CENTER>
-</TD></TR></TABLE></CENTER>
- </BODY>
-</HTML>
- 
+
+
+@-webkit-keyframes spin-right {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+        
+ </style>
+        <style>
+            body{background-color: black;}   
+        
+    
+        </style>
+         <style>    h1{
+            
+           font-size: 70px;
+            color: black;
+        background-color: rosybrown;
+        }
+    </style>
+    
+
+        
+        
+        
+       </head>
+    
+    <body>
+      <h1> Earth and sun</h1>
+    
+    <div id="sun"></div>
+
+<div id="earth-orbit">
+    <div id="earth"></div>
+
+    <div id="moon-orbit">
+        <div id="moon"></div>
+    </div>
+</div>
+        
+   
+      
+    
+    </body>
+
+</html>
+
+
