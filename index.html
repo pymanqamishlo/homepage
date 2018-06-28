@@ -91,8 +91,95 @@
         }
        
         }
+         #sun {
+    background-color : #ba8f27;
+    border-radius : 200px;
+    box-shadow : 0 0 128px red;
+    margin-top : -100px; 
+    margin-left : -100px;
+    left : 50%;
+    height : 200px;
+    position : absolute;
+    top : 50%;
+    width : 200px;
+}
+
+#earth-orbit {
+    border: 2px solid #373737;
+    border-radius: 50%;
+    left: 50%;
+    height: 500px;
+    margin-top: -250px;
+    margin-left: -250px;
+    position: absolute;
+    top: 50%;
+    width: 500px;
+
+    -webkit-animation: spin-right 10s linear infinite;
+    -moz-animation: spin-right 10s linear infinite;
+    -ms-animation: spin-right 10s linear infinite;
+    -o-animation: spin-right 10s linear infinite;
+    animation: spin-right 10s linear infinite;
+}
+ #moon-orbit {
+    border-radius: 50%;
+    left: 50%;
+    height: 500px;
+    margin-top: -250px;
+    margin-left: -250px;
+    position: absolute;
+    top: 50%;
+    width: 500px;
+
+    transform: rotate(360deg);
+    transform-origin: 50% 100%;
+}
+
+#earth {
+    background-color : #2d7ddc;
+    border-radius : 50px;
+    margin-left : -25px;
+    margin-top : -25px;
+    height : 50px;
+    left : 50%;
+    position : absolute;
+    top : 0%;
+    width : 50px;
+}
+     #moon {
+    background-color : #b2b2b2;
+    border-radius : 50px;
+    margin-left : -25px;
+    margin-top : -25px;
+    height : 16px;
+    left : 43%;
+    position : absolute;
+    top : 0%;
+    width : 16px;
+}
+
+
+
+@-webkit-keyframes spin-right {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+        
                     
     </style>
+     <style>    h1{
+            
+           font-size: 70px;
+            color: black;
+        background-color: rosybrown;
+        }
+    </style>
+    
+
+        
+        
+        
 </head>
     <body>
         <h1> be relax and close your eyes and dream with us</h1>
@@ -128,6 +215,21 @@ The reality of this world where I am living right now makes me afraid to live he
         
         
     </script>  
+         <h1> Earth and sun</h1>
+    
+    <div id="sun"></div>
+
+<div id="earth-orbit">
+    <div id="earth"></div>
+
+    <div id="moon-orbit">
+        <div id="moon"></div>
+    </div>
+</div>
+        
+   
+      
+    
     </body>
 </html>
     
